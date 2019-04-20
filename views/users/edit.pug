@@ -1,0 +1,62 @@
+extends ../layout.pug
+block content
+  section(id='login', class='container')
+    
+    section(id='login-form', class='')
+
+      div(class='nav-user title')
+        h1 Edit Item
+        
+      
+      form(action =`/users/${item.id}` + '?_method=PUT',  method ='POST', enctype ='multipart/form-data')
+        div(class = 'label-input')
+          label(for="name") Name*
+          input(type="text" name="name" maxlength="14" value = `${item.name}`)
+        div(class = 'label-input')
+          label(for="amount") Amount*
+          input(type="number" name="amount" value = `${item.amount}` scale='50' min="50" max="10000")
+        div(class = 'label-input')
+          label(for='date') Date*
+          select(name='date', class='date-list')
+            option #{item.date}
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+            option 6
+            option 7
+            option 8
+            option 9
+            option 10
+            option 11
+            option 12
+            option 13
+            option 14
+            option 15
+            option 16
+            option 17
+            option 18
+            option 19
+            option 20
+            option 21
+            option 22
+            option 23
+            option 24
+            option 25
+            option 26
+            option 27
+            option 28
+            option 29
+            option 30
+            option 31
+        div(class = 'label-input')
+          label( for='acronym') Acronym
+          input(type='text' name='acronym' maxlength="4"  value = `${item.acronym}`)
+        div(class = 'label-input')
+          input(class='btn-submit', type ='submit' value ='Save Changes')
+      
+      form(action =`/users/${item._id}` + '?_method=DELETE',  method ='POST', enctype ='multipart/form-data')
+        div(class = 'label-input')
+          input(class = 'btn-submit delete', type ='submit' value ='Delete')
+  

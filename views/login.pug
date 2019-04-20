@@ -1,0 +1,18 @@
+extends ./layout.pug
+block content
+  section(id='login', class='container')
+    
+    section(id='login-form', class='')
+      
+      div(class='title')
+        h1 Wiii-Pay
+        
+      section(id='')
+        form( class = 'column', action = "/sessions", method = "POST" enctype="multipart/form-data")
+          div(class = 'label-input')
+            label(for = "userName") User Name
+            input(type ="text", name="userName", value = '', placeholder = "User Name", id = "userName")
+          div(class = 'label-input')
+            label(for = "password") Password
+            input(type ="password", name="password", value = '', placeholder = "Password", id = "password")
+          input(class = 'btn-submit', type ="submit", value ="Log In", class="btn btn-info")

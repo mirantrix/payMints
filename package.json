@@ -1,0 +1,28 @@
+{
+  "name": "wiii-Pay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "7.0.0",
+    "express": "4.16.4",
+    "express-form-data": "2.0.8",
+    "express-session": "^1.15.6",
+    "method-override": "3.0.0",
+    "mongoose": "5.4.21",
+    "path": "0.12.7",
+    "pug": "2.0.3"
+  },
+  "engines": {
+    "node": "10.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.10"
+  }
+}

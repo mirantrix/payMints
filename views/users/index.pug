@@ -1,0 +1,59 @@
+extends ../layout.pug
+block content
+  section(id='user')
+        
+    div(class='header')
+      div(class='user-profile')
+        div(class='profile')
+          figure(class='user-avatar')
+            img(src=`./images/${owner.avatar}.jpg`)
+          div(class='profile-data')
+            h2 #{owner.userName}
+            p(class='nextPayment') wiii-Pay
+        
+        
+      div(class='nav-user title')
+        div(class='info')
+          div(class='days-left')
+            p(class='nextPayment') Today's Date
+            h3(id='todays-date')
+          div(class='days-left')
+            p(class='nextPayment') Next Payment
+            h3(id='days-left') #{nextUp}
+        div(class='create-new-item')
+          a(href='/users/create') Add
+        
+          
+  section(id='user-items')      
+    div(class='content')          
+      ul(class='user-data-titles')
+        li(class='acronym') Item
+        li(class='date') Upcoming
+        li(class='amount') Amount
+          
+      ul(class='user')
+        for item in up
+          li(class='columns')
+            ul(class='user-data')
+               li(class='acronym') #{item.name}
+               li(class='date') <span class="month-name">#{actualMonth}</span> #{item.date} 
+               li(class='amount') $ #{item.amount}
+               li(class='edit')
+                 a(class = 'edit-link', href=`/users/${item._id}`) Edit
+      
+      div(class='month')
+        h4(class='month-title') #{month}
+       
+      ul(class='user')
+       for item in pass
+         li(class='columns')
+           ul(class='user-data')
+              li(class='acronym') #{item.name}
+              li(class='date') <span class="month-name">MAY</span> #{item.date}
+              li(class='amount') $ #{item.amount}
+              li(class='edit')
+                a(class = 'edit-link', href=`/users/${item._id}`) Edit       
+      div(class = 'logout')
+        a(href='/users/logout') Logout
+               
+    script(type="application/javascript", src="js/date.js")      

@@ -1,0 +1,58 @@
+extends ../layout.pug
+block content
+  section(id='login', class='container')
+    
+    section(id='login-form', class='')
+
+      div(class='nav-user title')
+        div(class='info')
+          div(class='')
+            p(class='nextPayment') Section
+            h1 New Payment
+
+        
+      form(id="upload-form", class="column", action="/users/create", method="POST", enctype ='multipart/form-data')
+        div(class = 'label-input')
+          label( for="name") Name*
+          input(type="text" name="name" maxlength="14" value="")
+        div(class = 'label-input')
+          label(for="amount") Amount*
+          input(type="number" name="amount" value="0" scale='50' min="0" max="10000")
+        div(class = 'label-input')
+          label(for='date') Date*
+          select(name='date', class='date-list')
+            option(value="1") 1
+            option(value="2") 2
+            option(value="3") 3
+            option(value="4") 4
+            option(value="5") 5
+            option(value="6") 6
+            option(value="7") 7
+            option(value="8") 8
+            option(value="9") 9
+            option(value="10") 10
+            option(value="11") 11
+            option(value="12") 12
+            option(value="13") 13
+            option(value="14") 14
+            option(value="15") 15
+            option(value="16") 16
+            option(value="17") 17
+            option(value="18") 18
+            option(value="19") 19
+            option(value="20") 20
+            option(value="21") 21
+            option(value="22") 22
+            option(value="23") 23
+            option(value="24") 24
+            option(value="25") 25
+            option(value="26") 26
+            option(value="27") 27
+            option(value="28") 28
+            option(value="29") 29
+            option(value="30") 30
+            option(value="31") 31
+        div(class = 'label-input')
+          label( for='acronym') Acronym
+          input(type='text' name='acronym' maxlength="4"  value='')
+        input(class = 'btn-submit', type='submit' value='Post')
