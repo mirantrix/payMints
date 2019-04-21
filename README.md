@@ -3,9 +3,12 @@
 Wiii-Pay
 
 
+
 ## Description
 
 Document and edit your Monthly Recurring Expenses and know how many days left to upcoming payment.
+
+
 
 
 ## Features:
@@ -27,6 +30,7 @@ Document and edit your Monthly Recurring Expenses and know how many days left to
 
 
 
+
 ## Dependencies
 
 ```
@@ -34,13 +38,15 @@ Document and edit your Monthly Recurring Expenses and know how many days left to
 "dotenv": "7.0.0",
 "express": "4.16.4",
 "express-form-data": "2.0.8",
-"express-session": "^1.15.6",
+"express-session": "1.15.6",
 "method-override": "3.0.0",
 "mongoose": "5.4.21",
 "path": "0.12.7",
 "pug": "2.0.3"
 
 ```
+
+
 
 
 ## Install & Run Server
