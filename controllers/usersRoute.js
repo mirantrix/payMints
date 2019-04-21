@@ -19,7 +19,8 @@ usersRoute.route('/')
           month: 'Next Month:',
           actualMonth: thisMonth,
           nextMonth: nextMonth,
-          nextUp: Number(upComming.concat(passComming)[0].date)
+          nextUp: Number(upComming.concat(passComming)[0].date),
+          imagesEndpoint: 'http://mirantrix.com/wiiipay/images/'
         });
         return;
       }).catch(err => {

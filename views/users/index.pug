@@ -6,7 +6,7 @@ block content
       div(class='user-profile')
         div(class='profile')
           figure(class='user-avatar')
-            img(src=`./images/${owner.avatar}.jpg`)
+            img(src=`${imagesEndpoint}${owner.avatar}.jpg`)
           div(class='profile-data')
             h2 #{owner.userName}
             p(class='nextPayment') wiii-Pay
