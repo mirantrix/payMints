@@ -59,3 +59,22 @@ $ npm install
 $ npm run dev
 
 ```
+
+
+# Free Dyno Hours
+
+• If dyno receives no web traffic in a 30-minute period, it will sleep.
+
+• If a sleeping web dyno receives web traffic, it will become active again after a short delay (assuming your account has free dyno hours available).
+
+• Accounts are given a base of 550 free dyno hours each month
+
+• Documentation in their [Official Site](https://devcenter.heroku.com/articles/free-dyno-hours)
+
+
+
+# NextFC Live Link
+
+Click to wake up Dyno, takes about 10 seconds...
+
+[https://wiiipay.herokuapp.com/](https://wiiipay.herokuapp.com/)
