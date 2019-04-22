@@ -31,7 +31,7 @@ const nextUp = () => {
       return nextPayment;
     }
     if(daysLeft < 0){
-      nextPayment = 'Untill next month!'
+      nextPayment = "'till next month!"
       return nextPayment;
     }
   return nextPayment

@@ -5,7 +5,12 @@ block content
     section(id='login-form', class='')
 
       div(class='nav-user title')
-        h1 Edit Item
+        div(class='info')
+          div(class='')
+            p(class='nextPayment') Section
+            h1 Edit
+        div(class='back-button')
+          a(href='/users') ❮
         
       
       form(action =`/users/${item.id}` + '?_method=PUT',  method ='POST', enctype ='multipart/form-data')
